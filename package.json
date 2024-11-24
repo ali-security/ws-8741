@@ -1,6 +1,6 @@
 {
   "name": "ws",
-  "version": "6.2.2",
+  "version": "6.2.2-sp1",
   "description": "Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js",
   "keywords": [
     "HyBi",
@@ -23,7 +23,7 @@
     "lib/*.js"
   ],
   "scripts": {
-    "test": "npm run lint && nyc --reporter=html --reporter=text mocha test/*.test.js",
+    "test": "npm run lint && mocha test/*.test.js",
     "integration": "npm run lint && mocha test/*.integration.js",
     "lint": "eslint --ignore-path .gitignore . && prettier --check --ignore-path .gitignore \"**/*.{json,md,yml}\""
   },
